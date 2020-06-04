@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 import javax.naming.spi.DirStateFactory.Result;
 
-public class practice_calcul01 {
+public class practice01_calcul {
 
 	public static void main(String[] args) {
 
