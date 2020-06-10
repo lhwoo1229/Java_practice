@@ -1,11 +1,11 @@
 package Java_practice.test1;
 
-import java.awt.print.Printable;
+
 import java.util.Scanner;
 
-import javax.naming.spi.DirStateFactory.Result;
 
-public class practice01_calcul {
+
+public class Practice01_calcul {
 
 	public static void main(String[] args) {
 

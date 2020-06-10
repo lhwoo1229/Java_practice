@@ -2,7 +2,7 @@ package Java_practice.test1;
 
 import java.util.Scanner;
 
-public class practice02_if_calcul {
+public class Practice02_if_calcul {
 
 	public static void main(String[] args) {
 
