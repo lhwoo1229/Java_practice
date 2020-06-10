@@ -1,6 +1,6 @@
 package Java_practice.test1;
 
-public class practice04_data2 {
+public class Practice04_data2 {
 
 	public static void main(String[] args) {
 
