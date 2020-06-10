@@ -8,7 +8,7 @@ public class practice09_if_switch {
 
 		int a,b;
 		int result; 
-		char ch;
+		char ch; 
 		Scanner k =new Scanner(System.in);
 		
 		System.out.print("첫번째 수를 입력하세요: ");
