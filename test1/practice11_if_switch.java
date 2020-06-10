@@ -2,7 +2,7 @@ package Java_practice.test1;
 
 import java.util.Scanner;
 
-public class practice11_if_switch {
+public class Practice11_if_switch {
 
 	public static void main(String[] args) {
 
