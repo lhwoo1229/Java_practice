@@ -2,7 +2,7 @@ package Java_practice.test1;
 
 import java.util.Scanner;
 
-public class practice06_operator {
+public class Practice06_operator {
 
 	public static void main(String[] args) {
 
