@@ -2,7 +2,7 @@ package Java_practice.test1;
 
 
 
-public class practice12_for {
+public class Practice12_for {
 
 	public static void main(String[] args) { 
 
