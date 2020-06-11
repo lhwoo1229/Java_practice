@@ -22,6 +22,7 @@ public class Practice01_calcul {
 		System.out.print("네번째 계산할 값을 입력하세요 ==>");
 		d = key.nextInt();
 		
+		
 		Result = a+b+c+d;
 		System.out.println(a+"+"+b+"+"+c+"+"+d+" = "+ Result);
 	}
