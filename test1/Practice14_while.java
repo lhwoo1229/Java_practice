@@ -20,7 +20,7 @@ public class Practice14_while {
 	
 		int i = start;
 			while(i<=end) { 	//i(시작값)가 end(끝값)보다 작거나 같을 동안 계속 반복한다.
-				if(i%c==0) 	//i의 값이 입력한 c(배수)라면 누적해서 더해간다
+				if(i%c==0) 	//i의 값이 입력한 c(배수)일 때만 누적해서 더해간다
 				hap +=i;
 			
 			i++;
