@@ -20,9 +20,9 @@ import javax.swing.SwingConstants;
 
 public class Calc extends JFrame{
 	
-	static JLabel label;	//모든 클래스에서 공유할 수 있게 전역변수로 선언
+	static JLabel label;	//모든 클래스에서 공유할 수 있게 전역변수로 선언(수식출력란)
 	static JLabel info;		//현재 상황 및 연산결과 알려주는 JLabel,
-	static int flag = 0;	//상황에 따라 바뀌는 int 변수
+	static int flag = 0;	//상황에 따라 바뀌는 int 변수 
 	static int check = 0;	//(flag: 계산 결과가 양수인지, check: 10,000,000 미만의 수를 입력했는지)
 	
 	public Calc() {
@@ -35,12 +35,12 @@ public class Calc extends JFrame{
 		
 		//BorderLayout으로 배치, 각 위치에 JPanel 부착
 		NorthPanel NP = new NorthPanel();	
-		c.add(NP, BorderLayout.EAST);		
+		c.add(NP, BorderLayout.NORTH);		
 		
 		CenterPanel CP = new CenterPanel();
 		c.add(CP, BorderLayout.SOUTH);
 		
-		setSize(800, 500);
+		setSize(400, 500);
 		setVisible(true);
 	}
 	class NorthPanel extends JPanel{
@@ -150,9 +150,9 @@ public class Calc extends JFrame{
 								}
 								else if(n>0 && n<=10) {
 									label.setFont(new Font("맑은 고딕", 0, 40));		
-									System.out.println("전 "+label.getText().length());
+									//System.out.println("전 "+label.getText().length());
 									label.setText(label.getText().substring(0, n));	
-									System.out.println("후 "+label.getText().length());
+									//System.out.println("후 "+label.getText().length());
 									info.setText("수식을 지우는 중입니다...");
 								}
 								else {
@@ -175,7 +175,7 @@ public class Calc extends JFrame{
 					// 내부 클래스 활용해 이벤트 리스너 추가
 					else if(i%4 ==3) {
 						bt[i].setFont(new Font("맑은 고딕", 0, 40));
-						bt[i].setBackground(new Color(234,150,72));
+						bt[i].setBackground(new Color(128,150,32));
 						bt[i].setForeground(Color.WHITE);
 						add(bt[i]);
 						bt[i].addActionListener(new MyListener());
@@ -221,10 +221,10 @@ public class Calc extends JFrame{
 				
 				if(result<0) {
 					info.setText("양수 범위의 계산만 할 수 있습니다.");
-					label.setText(Double.toString(result));
+					label.setText(Double.toString(result)); //결과는 출력
 					flag = 1;
 				}else if(result >= 10000000) {
-					info.setText("10,000,000 미만의 범위만 계산할 수 있습니다.");
+					info.setText("1000만 미만의 범위만 계산할 수 있습니다.");
 					label.setText("0.0");
 				}
 				else label.setText(Double.toString(result));
@@ -258,7 +258,7 @@ public class Calc extends JFrame{
 			for(i = 0; i<v.size(); i++) {
 				if(v.get(i)>=10000000) {
 					check =1;
-					info.setText("10,000,000 미만의 수끼리만 계산할 수 있습니다.");
+					info.setText("1000만 미만의 수끼리만 계산할 수 있습니다.");
 					break;
 				}
 			}
